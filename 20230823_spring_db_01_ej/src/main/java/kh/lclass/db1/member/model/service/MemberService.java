@@ -22,7 +22,7 @@ public class MemberService {
 	public int selectOne(String pk) {
 		return dao.selectOne(pk);
 	}
-	
+	@Transactional
 	public int insert(MemberVo vo) {
 		dao.update(vo);
 		return dao.insert(vo);
