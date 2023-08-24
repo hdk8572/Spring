@@ -34,14 +34,10 @@
 
 	<!-- Transaction Manager commit/rollback -->
 	<bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="transactionManager">
-		<constructor-arg ref="transactionManager"/>
+		<constructor-arg ref="dataSource"/>
 	</bean>
 	
 	<!-- @Transactional 사용되는 코드를 AOP통해서 설정함. -->
 	<tx:annotation-driven/>
-	
-<!-- 	<bean class="kh.lclass.db1.member.model.dao.MemberDao" id="memberDao">
-	</bean> -->
-	
 	
 </beans>

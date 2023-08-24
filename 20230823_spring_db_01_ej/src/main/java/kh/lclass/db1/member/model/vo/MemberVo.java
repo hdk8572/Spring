@@ -15,6 +15,10 @@ public class MemberVo {
 		return "MemberVo [mid=" + mid + ", mpwd=" + mpwd + ", mname=" + mname + ", memail=" + memail + "]";
 	}
 
+	public MemberVo() {
+		super();
+	}
+
 	public MemberVo(String mid, String mpwd, String mname, String memail) {
 		super();
 		this.mid = mid;
