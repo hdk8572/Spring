@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,9 +10,6 @@
 <body>
 
 	<h2>Board List</h2>
-	[[
-	${boardList}
-	]]
 	
 	<table border="1">
 		<tr>
@@ -25,16 +22,18 @@
 			<td>BRE_LEVEL</td>
 			<td>BRE_STEP</td>
 		</tr>
+		<c:forEach items="${boardList}" var="List">
      	<tr>
-            <td>${bno}</td>
-            <td>${btitle}</td>
-            <td>${bcontent}</td>
-            <td>${bwriteDate}</td>
-            <td>${mid}</td>
-            <td>${bref}</td>
-            <td>${breLevel}</td>
-            <td>${breStep}</td>
+            <td>${List.bno}</td>
+            <td>${List.btitle}</td>
+            <td>${List.bcontent}</td>
+            <td>${List.bwriteDate}</td>
+            <td>${List.mid}</td>
+            <td>${List.bref}</td>
+            <td>${List.breLevel}</td>
+            <td>${List.breStep}</td>
         </tr>
+        </c:forEach>
     </table>
 </body>
 </html>

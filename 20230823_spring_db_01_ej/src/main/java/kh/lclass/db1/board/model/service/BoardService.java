@@ -19,12 +19,12 @@ public class BoardService {
 		return boardDao.selectList(); 
 	}
 	
-	public int selectOne(int bno) {
+	public BoardVo selectOne(int bno) {
 		return boardDao.selectOne(bno);
 	}
 	
 	public int insert(BoardVo vo) {
-		boardDao.update(vo);
+//		boardDao.update(vo);
 		return boardDao.insert(vo);
 	}
 	@Transactional

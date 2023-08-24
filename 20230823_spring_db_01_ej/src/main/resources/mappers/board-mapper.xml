@@ -5,5 +5,12 @@
 	<select id="selectList" resultType="Board">
 		SELECT * FROM BOARD
 	</select>
-  
+	
+	<select id="selectOne" resultType="Board" parameterType="_int">
+		SELECT * FROM BOARD WHERE BNO = #{bno}
+	</select>
+	
+	<insert id="insert" parameterType="Board">
+		INSERT INTO * VALUES (#{bno}, #{btitle}, #{bcontent}, #{bwriteDate}, #{mid}, #{bref}, #{breLevel}, #{breStep})
+	</insert>
 </mapper>

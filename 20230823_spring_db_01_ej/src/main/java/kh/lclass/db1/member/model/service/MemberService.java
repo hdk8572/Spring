@@ -19,7 +19,7 @@ public class MemberService {
 		return dao.selectList(); 
 	}
 	
-	public int selectOne(String pk) {
+	public MemberVo selectOne(String pk) {
 		return dao.selectOne(pk);
 	}
 	

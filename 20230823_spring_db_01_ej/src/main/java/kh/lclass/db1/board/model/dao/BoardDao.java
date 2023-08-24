@@ -19,11 +19,12 @@ public class BoardDao {
 		return sqlSession.selectList("board.selectList");
 	}
 	
-	public int selectOne(int bno) {
+	public BoardVo selectOne(int bno) {
 		return sqlSession.selectOne("board.selectOne", bno);
 	}
 	
 	public int insert(BoardVo vo) {
+		
 		return sqlSession.insert("board.insert", vo);
 	}
 	

@@ -21,7 +21,7 @@ public class MemberDao {
 		return sqlSession.selectList("member.selectList");
 	}
 	
-	public int selectOne(String pk) {
+	public MemberVo selectOne(String pk) {
 		return sqlSession.selectOne("member.selectOne", pk);
 	}
 	

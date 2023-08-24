@@ -17,6 +17,10 @@ public class BoardVo {
 				+ ", mid=" + mid + ", bref=" + bref + ", breLevel=" + breLevel + ", breStep=" + breStep + "]";
 	}
 
+	public BoardVo() {
+		super();
+	}
+
 	public BoardVo(int bno, String btitle, String bcontent, String bwriteDate, String mid, int bref, int breLevel,
 			int breStep) {
 		super();
