@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>kh.lclass</groupId>
-	<artifactId>db1</artifactId>
-	<name>20230823_spring_db_01_ej</name>
+	<artifactId>test</artifactId>
+	<name>Test1</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
@@ -123,7 +123,7 @@
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 			<scope>test</scope>
-		</dependency> 
+		</dependency>        
 		
 		<!-- CommonDBCP -->
 		<!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
@@ -172,6 +172,7 @@
 		    <artifactId>gson</artifactId>
 		    <version>2.10.1</version>
 		</dependency>
+		
 	</dependencies>
     <build>
         <plugins>

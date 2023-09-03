@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="board"> 
+
+	<select id="selectList" resultType="BoardVo">
+		SELECT *
+		FROM MYBOARD
+	</select>
+	
+	<select id="selectOne" resultType="BoardVo">
+		SELECT *
+		FROM MYBOARD
+		WHERE IDX=#{IDX}
+	</select>
+	
+	<insert id="insert" parameterType="BoardVo">
+		INSERT INTO MYBOARD(TITLE, CONTENT, WRITER)
+		VALUES(#{title}, #{content}, #{writer})
+	</insert>
+	
+	<delete id="delete" parameterType="_Int">
+		DELETE FROM MYBOARD WHERE IDX=#{IDX}
+	</delete>
+	
+</mapper>
