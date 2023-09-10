@@ -22,4 +22,9 @@
 		DELETE FROM MYBOARD WHERE IDX=#{IDX}
 	</delete>
 	
+	<update id="update" parameterType="BoardVo">
+		UPDATE MYBOARD SET TITLE=#{title}, CONTENT=#{content}
+		WHERE IDX=#{idx}
+	</update>
+	
 </mapper>

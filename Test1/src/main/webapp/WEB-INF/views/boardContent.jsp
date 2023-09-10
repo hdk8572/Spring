@@ -39,8 +39,8 @@
           </tr>
           <tr>
           	<td colspan="2" align="center">
-          		<a class="btn btn-primary btn-small">수정화면</a>
-          		<a href="boardDelete.do?idx=${vo.idx}"class="btn btn-warning btn-small">삭제</a>
+          		<a href="boardUpdateForm.do?idx=${vo.idx}" class="btn btn-primary btn-small">수정화면</a>
+          		<a href="boardDelete.do?idx=${vo.idx}" class="btn btn-warning btn-small">삭제</a>
           		<a href="boardlist.do"class="btn btn-info btn-small">목록</a>
           	</td>
           </tr>

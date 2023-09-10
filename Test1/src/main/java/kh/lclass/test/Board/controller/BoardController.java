@@ -46,4 +46,18 @@ public class BoardController {
 		return "redirect:/board/boardlist.do";
 	}
 	
+	@GetMapping("/board/boardUpdateForm.do")
+	public String boardUpdateForm(Model model, int idx) {
+		BoardVo vo = boardService.selectOne(idx);
+		model.addAttribute("vo", vo);
+		return "boardUpdate";
+	}
+	
+	@PostMapping("board/boardUpdate.do")
+	public String boardUpdate(BoardVo vo) {
+		boardService.update(vo);
+		return "redirect:/board/boardlist.do";
+	}
+	
+		
 }

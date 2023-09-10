@@ -26,9 +26,12 @@ public class BoardService {
 		return dao.insert(vo);
 	}
 	
-	
 	public int delete(int idx) {
 		return dao.delete(idx);
+	}
+	
+	public int update(BoardVo vo) {
+		return dao.update(vo);
 	}
 	
 }
